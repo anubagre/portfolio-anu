@@ -1,0 +1,28 @@
+:root {
+    --shadow: #48e0ff83;
+    --bg: #D7F8FF;
+    --text: #0C3149;
+    --border: #48E0FF;
+}
+
+.navbar-main-div {
+    background-color: var(--bg);
+    width: 80%;
+    box-shadow: inset 1px 1px 10px var(--shadow);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li{
+    margin: 10px;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 16px;
+}
