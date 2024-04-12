@@ -17,3 +17,87 @@
     font-weight: 500;
     margin-bottom: 20px;
 }
+
+.all-projects:hover .project:not(:hover){
+    background-color: #C4EEFA;
+}
+
+/* Individual Projects */
+.project{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg);
+    box-shadow: inset 1px 1px 10px var(--shadow);
+    margin-top: 20px;
+    padding: 10px 20px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.project:hover{
+    background: linear-gradient(to right,#E7FBFF, #D3F8FF, #C4F5FF);
+    background-size: 500% auto;
+    animation: bgShine 0.6s ease-in-out infinite alternate-reverse;
+    transform: scale(1.01);
+}
+
+@keyframes bgShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.proj-heading{
+    color: var(--text);
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+
+.proj-tech{
+    color: var(--text2);
+    text-align: center;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.proj-date{
+    text-align: right;
+    color: var(--text2);
+}
+
+.proj-description ul{
+    display: grid;
+    justify-content: left;
+    margin: 10px;
+}
+
+.proj-description ul li{
+    list-style: square;
+    line-height: 8px;
+    font-weight: 400;
+}
+
+.proj-description ul li b{
+    font-weight: 500;
+}
+
+.proj-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.proj-buttons a{
+    color: white;
+    background-color: var(--text2);
+    border-radius: 5px;
+    padding: 4px 14px;
+    margin: 5px;
+}
+
+

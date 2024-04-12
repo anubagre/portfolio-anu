@@ -9,7 +9,7 @@ export default function Skills({ componentRef }) {
     { sname: "Data Science", img: "./Images/datas.png" },
     { sname: "SQL", img: "./Images/sql.png" },
     { sname: "Generative AI", img: "./Images/genai.png" },
-    { sname: "Natural Language Prossing", img: "./Images/nlp.png" },
+    { sname: "Natural Language Processing", img: "./Images/nlp.png" },
     { sname: "Data Structures and Algorithm (Python)", img: "./Images/dsa.png" },
     { sname: "Frontend - HTML, CSS", img: "./Images/html.png" },
   ];
