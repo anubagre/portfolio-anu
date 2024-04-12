@@ -1,10 +1,14 @@
 import React from 'react'
+import '../Styles/projects.css'
 
 export default function Projects({componentRef}) {
   return (
-    <div>
+    <div className='projects-main-div'>
       <div className='empty-space' ref={componentRef}></div>
-      Projects Section
+      <div className='projects-heading'>Projects</div>
+      <div className="all-projects">
+        
+      </div>
     </div>
   )
 }

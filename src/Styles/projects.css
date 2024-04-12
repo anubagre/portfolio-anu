@@ -1,0 +1,19 @@
+:root {
+    --shadow: #48e0ff83;
+    --bg: #D7F8FF;
+    --text: #0C3149;
+    --text2: #467CA0;
+    --border: #48E0FF;
+}
+
+.projects-main-div{
+    width: 80%;
+    margin: auto;
+}
+
+.projects-heading{
+    font-size: 28px;
+    color: var(--text);
+    font-weight: 500;
+    margin-bottom: 20px;
+}

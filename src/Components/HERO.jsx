@@ -34,7 +34,7 @@ export default function HERO() {
                     <a href="https://www.linkedin.com/in/anu-bagre" target='_blank'><img src="./Images/linkedin.png" alt="linkedin" /></a>
                     <a href="https://github.com/anubagre" target='_blank'><img src="./Images/github.png" alt="github" /></a>
                     <a href="https://leetcode.com/anubagre/" target='_blank'><img src="./Images/leetcode.png" alt="leetcode" /></a>
-                    <a href="" target='_blank'><img src="./Images/gmail.png" alt="email" /></a>
+                    <a href="mailto:anubagre1@gmail.com" target='_blank'><img src="./Images/gmail.png" alt="email" /></a>
                 </div>
             </div>
             <span className='hero-about-me' id='profile-content'>{profileText} </span><a className='read-more-button' onClick={toggleText}>{buttonText}</a>
