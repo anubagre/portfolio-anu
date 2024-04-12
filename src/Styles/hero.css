@@ -17,6 +17,7 @@
 .hero-main{
     display: grid;
     grid-template-columns: 150px 20px 4fr 20px 1fr;
+    margin-bottom: 30px;
 }
 
 .hero-profile-img{
@@ -61,4 +62,19 @@
     width: 30px;
     height: auto;
     margin: 4px;
+}
+
+/* About Me Text */
+.hero-about-me{
+    font-size: 16px;
+    color: var(--text);
+}
+
+.hero-about-me b{
+    font-weight: 500;
+}
+
+.read-more-button{
+    color: var(--border);
+    font-weight: 600;
 }

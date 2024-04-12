@@ -4,7 +4,6 @@ import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Courses from './Components/Courses';
 import Achievements from './Components/Achievements';
-import Education from './Components/Education';
 import { useEffect, useRef, useState } from 'react'
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
   const projects = useRef(null);
   const courses = useRef(null);
   const achievements = useRef(null);
-  const education = useRef(null);
 
   const scrollToRef = (ref) => {
     window.scrollTo({
@@ -41,11 +39,6 @@ function App() {
     scrollToRef(achievements);
     setShowMediaIcons(!showMediaIcons);
   };
-  const compoE = (e) => {
-    e.preventDefault();
-    scrollToRef(education);
-    setShowMediaIcons(!showMediaIcons);
-  };
 
   const [showMediaIcons, setShowMediaIcons] = useState(false);
 
@@ -54,7 +47,7 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       let scrollButton = document.getElementById('topButton');
-      if (window.scrollY > 400) {
+      if (window.scrollY > 200) {
         setShowUpArrow(true);
         scrollButton.classList.add('animate');
       }
@@ -75,13 +68,12 @@ function App() {
   const toggleMediaIcons = (e) => {
     e.preventDefault(); // Prevent default behavior
     setShowMediaIcons(!showMediaIcons);
-  }; 
+  };
 
   return (
     <div>
       <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#D7F8FF_1px,transparent_1px),linear-gradient(to_bottom,#D7F8FF_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-20 right-0 top-0 bg-[radial-gradient(circle_1000px_at_100%_200px,#D7F8FF,transparent)]"></div></div>
-      {/* <Navbar compoA={compoA} compoB={compoB} compoC={compoC} compoD={compoD} compoE={compoE} toggleMediaIcons={toggleMediaIcons} showMediaIcons={showMediaIcons} showUpArrow={showUpArrow} scrollToTop={scrollToTop}/> */}
-
+      {/* <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#062438_40%,#112430_100%)]"></div> */}
       <div className='navbar-main-div'>
         <div className="hamburger-button">
           <a href="#" onClick={toggleMediaIcons}>
@@ -90,11 +82,11 @@ function App() {
         </div>
         <div className={showMediaIcons ? "nav-link mobile-nav-link" : "nav-link"} >
           <ul>
-            <li><a onClick={compoA}>Achievements</a></li>
+            <li><a onClick={compoA}>Skills</a></li>
             <li><a onClick={compoB}>Projects</a></li>
             <li><a onClick={compoC}>Courses</a></li>
-            <li><a onClick={compoD}>Education</a></li>
-            <li><a onClick={compoE}>Resume</a></li>
+            <li><a onClick={compoD}>Achievements</a></li>
+            <li><a href='https://drive.google.com/file/d/1L0Huy5LpORwGyCCp9ATxQ_9m1cf2u5es/view?usp=sharing' target='_blank'>Resume</a></li>
           </ul>
         </div>
 
@@ -105,7 +97,6 @@ function App() {
       <Projects componentRef={projects} />
       <Courses componentRef={courses} />
       <Achievements componentRef={achievements} />
-      <Education componentRef={education} />
       <div className='button-to-top' id='topButton'>
         <button>{showUpArrow && <i onClick={scrollToTop} class="fa fa-arrow-up" aria-hidden="true"></i>}</button>
       </div>

@@ -1,3 +1,4 @@
+/* Common CSS */
 *{
   margin: 0;
   padding: 0;
@@ -13,6 +14,10 @@ li{
   list-style: none;
 }
 
+.empty-space{
+  height: 100px;
+}
+
 :root {
   --shadow: #48e0ff83;
   --bg: #D7F8FF;
@@ -20,6 +25,7 @@ li{
   --border: #48E0FF;
 }
 
+/* Navbar */
 .navbar-main-div {
   background-color: var(--bg);
   width: 80%;
@@ -62,7 +68,7 @@ ul li{
 }
 
 .animate{
-  animation: topButton 0.3s;
+  animation: topButton 0.2s;
 }
 
 .button-to-top button {
