@@ -165,3 +165,10 @@ ul li{
     font-size: 30px;
   }
 }
+
+/* Additional */
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+  .navbar-main-div {
+    width: 90%;
+  }
+}

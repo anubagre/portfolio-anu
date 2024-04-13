@@ -6,6 +6,7 @@ export default function Achievements({ componentRef }) {
     <div className='achievements-main-div'>
       <div className='empty-space' ref={componentRef}></div>
       <div className='achievements-heading'>Achievements</div>
+      <h6>(Tap to pause, tap outside to start)</h6>
       <div className="all-achievements">
         <div className="achi-slider">
           <div><a href="https://www.linkedin.com/posts/anu-bagre_team-techfest-winner-activity-7027564170933854208-4E8K?utm_source=share&utm_medium=member_desktop" target='_blank'><b>1st rank</b> in Coding Competition, <b>Satyarth</b> (Tech fest 2023, SATI, Vidisha); Team size-5</a></div>

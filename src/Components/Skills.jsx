@@ -5,9 +5,9 @@ export default function Skills({ componentRef }) {
 
   const skills = [
     { sname: "Python", img: "./Images/python.png" },
-    { sname: "Machine Learning", img: "./Images/ml.png" },
-    { sname: "Data Science", img: "./Images/datas.png" },
     { sname: "SQL", img: "./Images/sql.png" },
+    { sname: "Data Science", img: "./Images/datas.png" },
+    { sname: "Machine Learning", img: "./Images/ml.png" },
     { sname: "Generative AI", img: "./Images/genai.png" },
     { sname: "Natural Language Processing", img: "./Images/nlp.png" },
     { sname: "Data Structures and Algorithm (Python)", img: "./Images/dsa.png" },

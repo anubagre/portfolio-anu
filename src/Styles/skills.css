@@ -1,50 +1,120 @@
 :root {
-    --shadow: #48e0ff83;
-    --bg: #D7F8FF;
-    --text: #0C3149;
-    --text2: #467CA0;
-    --border: #48E0FF;
+  --shadow: #48e0ff83;
+  --bg: #d7f8ff;
+  --text: #0c3149;
+  --text2: #467ca0;
+  --border: #48e0ff;
 }
 
-.skills-main-div{
+.skills-main-div {
+  width: 80%;
+  margin: auto;
+}
+
+.all-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 70%;
+}
+
+.skills-heading {
+  font-size: 28px;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.my-skill {
+  display: flex;
+  color: var(--text);
+  font-weight: 400;
+  align-items: center;
+  margin: 5px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 5px var(--shadow);
+  padding: 2px 4px;
+  width: fit-content;
+}
+
+.my-skill img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.my-skill div {
+  font-size: 18px;
+  margin: 5px 10px;
+}
+
+/* Responsive */
+@media screen and (min-width: 1352px) and (max-width: 1500px) {
+  .all-skills {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 1034px) and (max-width: 1352px) {
+  .all-skills {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 903px) and (max-width: 1050px) {
+  .all-skills {
+    width: 100%;
+  }
+  .skills-main-div {
+    width: 90%;
     margin: auto;
+  }
 }
 
-.all-skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    width: 70%;
-}
-
-.skills-heading{
-    font-size: 28px;
-    color: var(--text);
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.my-skill{
-    display: flex;
-    color: var(--text);
-    font-weight: 400;
-    align-items: center;
-    margin: 5px;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: inset 1px 1px 5px var(--shadow);
-    padding: 2px 4px;
-    width: fit-content;
-}
-
-.my-skill img{
-    width: 40px;
-    height: 40px;
+@media screen and (min-width: 443px) and (max-width: 903px) {
+  .all-skills {
+    width: 100%;
+  }
+  .skills-main-div {
+    width: 90%;
+    margin: auto;
+  }
+  .my-skill img {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+  }
+  
+  .my-skill div {
+    font-size: 14px;
+    margin: 5px 10px;
+  }
 }
 
-.my-skill div{
-    font-size: 18px;
+@media screen and (min-width: 0px) and (max-width: 443px) {
+  .all-skills {
+    width: 100%;
+  }
+  .skills-main-div {
+    width: 90%;
+    margin: auto;
+  }
+  .my-skill img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .my-skill div {
+    font-size: 14px;
     margin: 5px 10px;
+  }
+  .all-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .my-skill{
+    width: auto;
+  }
 }
