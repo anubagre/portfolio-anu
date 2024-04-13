@@ -80,7 +80,7 @@ export default function Projects({ componentRef }) {
         {/* WWA */}
         <div className="proj-ccc project">
           <div className="proj-heading">WhatsApp Web-Automation</div>
-          <div className="proj-tech">Python</div>
+          <div className="proj-tech">Web-scraping Python</div>
           <div className='proj-date'>December 2022</div>
           <div className="proj-description">
             <ul>
