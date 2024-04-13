@@ -27,22 +27,6 @@ export default function Projects({ componentRef }) {
           </div>
         </div>
 
-        {/* CC */}
-        <div className="proj-ccc project">
-          <div className="proj-heading">CityCompeer</div>
-          <div className="proj-tech">Python</div>
-          <div className='proj-date'>January 2024</div>
-          <div className="proj-description">
-            <ul>
-              <li>Team size- 4, my contribution- ChatBot development using <b>TensorFlow</b>, which is trained on the data of famous Indian cities.</li>
-            </ul>
-          </div>
-          <div className='proj-buttons'>
-            {/* <a>Live</a> */}
-            <a href='https://github.com/anubagre/CityCompeer' target='_blank'>GitHub</a>
-          </div>
-        </div>
-
         {/* PPoPOC */}
         <div className="proj-ccc project">
           <div className="proj-heading">Predicting Price of Pre-Owned-Cars</div>
@@ -74,6 +58,22 @@ export default function Projects({ componentRef }) {
           <div className='proj-buttons'>
             {/* <a>Live</a> */}
             <a href='https://github.com/anubagre/Author-Stylometery-Natural-Language-Processing-' target='_blank'>GitHub</a>
+          </div>
+        </div>
+
+        {/* CC */}
+        <div className="proj-ccc project">
+          <div className="proj-heading">CityCompeer</div>
+          <div className="proj-tech">Python</div>
+          <div className='proj-date'>January 2024</div>
+          <div className="proj-description">
+            <ul>
+              <li>Team size- 4, my contribution- ChatBot development using <b>TensorFlow</b>, which is trained on the data of famous Indian cities.</li>
+            </ul>
+          </div>
+          <div className='proj-buttons'>
+            {/* <a>Live</a> */}
+            <a href='https://github.com/anubagre/CityCompeer' target='_blank'>GitHub</a>
           </div>
         </div>
 
