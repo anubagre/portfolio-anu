@@ -100,7 +100,7 @@ function App() {
             <li><a onClick={compoB}>Projects</a></li>
             <li><a onClick={compoC}>Courses</a></li>
             <li><a onClick={compoD}>Achievements</a></li>
-            <li><a href='https://drive.google.com/file/d/1L0Huy5LpORwGyCCp9ATxQ_9m1cf2u5es/view?usp=sharing' target='_blank'>Resume</a></li>
+            <li><a href='https://drive.google.com/file/d/1j_M_dGsBy367c4uurLn02Z4Ch68sdmEj/view?usp=sharing' target='_blank'>Resume</a></li>
           </ul>
         </div>
       </div >
