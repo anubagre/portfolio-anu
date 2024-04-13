@@ -17,3 +17,75 @@
     font-weight: 500;
     margin-bottom: 20px;
 }
+
+/* Slider */
+.all-achievements{
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.all-achievements::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #badfe8);
+    content: " ";
+    z-index: 2;
+}
+
+.all-achievements::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #badfe8);
+    content: " ";
+    z-index: 2;
+}
+
+@keyframes slider {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.all-achievements:hover .achi-slider{
+    animation-play-state: paused;
+}
+
+.achi-slider{
+    animation: 20s slider infinite linear;
+    display: flex;
+}
+
+.achi-slider div{
+    margin: 0px 10px;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--bg);
+    box-shadow: inset 1px 1px 4px var(--shadow);
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: 500px;
+}
+
+.achi-slider a{
+    cursor: pointer;
+}
+
+.end-text{
+    color: var(--text2);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

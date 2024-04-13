@@ -18,6 +18,12 @@
     margin-bottom: 20px;
 }
 
+.all-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 .all-projects:hover .project:not(:hover){
     background-color: #C4EEFA;
 }
@@ -28,7 +34,6 @@
     border-radius: 10px;
     background-color: var(--bg);
     box-shadow: inset 1px 1px 10px var(--shadow);
-    margin-top: 20px;
     padding: 10px 20px;
     transform: scale(1);
     transition: transform 0.3s;
@@ -78,8 +83,8 @@
 
 .proj-description ul li{
     list-style: square;
-    line-height: 8px;
     font-weight: 400;
+    line-height: 20px;
 }
 
 .proj-description ul li b{
@@ -100,4 +105,6 @@
     margin: 5px;
 }
 
-
+.proj-buttons a:hover{
+    border-radius: 15px 10px;
+}
